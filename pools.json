@@ -10,12 +10,12 @@
       "pool_type": "base",
       "process_type": "extend",
       "pool_tvl": 1,
-      "pool_reward": 16615.2,
-      "pool_apy": 1661520,
+      "pool_reward": 0,
+      "pool_apy": 0,
       "volume_24hr": "0.00000000000000000000",
       "swap_apy": "0.0000",
       "status": "normal",
-      "updated_at": 1681895072297
+      "updated_at": 1681895907823
     },
     {
       "pool_id": 1,
@@ -26,13 +26,13 @@
       "pair_main": "token0",
       "pool_type": "base",
       "process_type": "extend",
-      "pool_tvl": 13.434959999998362,
-      "pool_reward": 8307.6,
-      "pool_apy": 61835.68838315122,
+      "pool_tvl": 1,
+      "pool_reward": 0,
+      "pool_apy": 0,
       "volume_24hr": "0.00000000000000000000",
       "swap_apy": "0.0000",
       "status": "normal",
-      "updated_at": 1681894229302
+      "updated_at": 1681895908785
     }
   ]
 }
