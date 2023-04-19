@@ -38,9 +38,10 @@ async function getData() {
     const poolInfo = await roomContract['poolInfo'](pool_id);
     const poolReward = poolInfo['allocPoint'].toNumber()/ totalAllocPoint.toNumber() * totalReward;
     const apy = poolReward * rewardPrice / stakeTvl * 100;
-    poolData.push(Object.assign(pool, {pool_reward: poolReward, pool_apy: apy, updated_at: new Date().getTime()}));
+    poolData.push(Object.assign(pool, {pool_tvl: stakeTvl, pool_reward: poolReward, pool_apy: apy, updated_at: new Date().getTime()}));
   }
   console.log('poolData', poolData)
+  db.set(`pools`, poolData).write();
 }
 
 getData()
